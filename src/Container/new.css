@@ -1,0 +1,83 @@
+.musiccontainer{
+    background-color: black;
+    position: absolute;
+    width: 70vw;
+    right:0px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.cardstyle1{
+    width: 250px;
+    height: 200px;
+    border: 1px solid white;
+}
+.singerimg1{
+     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    height: 60%;
+    width: 100%;
+    padding: 2vh;
+    
+}
+
+#sn{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    
+    top: 10px;
+    font-size: 20px;
+    color: white;
+}
+.btn1{
+    position: absolute;
+    top: 80px;
+}
+@media only screen and (max-width:940px){
+    .musiccontainer{
+        width: 100vw;
+    }
+}
+@media only screen and (max-width:580px){
+  .musiccontainer{
+    top: 5vh;
+  }
+}
+@media only screen and (max-width:420px){
+    .musiccontainer{
+        left: 0px;
+        width: 100%;
+    }
+    .singerimg1{
+        height: 200px;
+        left: -10px;
+    }
+    .img1{
+       width: 90%;
+    }
+}
+@media only screen and (max-width:320px){
+    .musiccontainer{
+
+    }
+    .singerimg1{
+        height: 250px;
+    }
+    .img1{
+        margin-left: 20px;
+        width: 280px;
+    }
+    .cardstyle1{
+        height: 150px;
+    }
+    .btn1{
+        top: 60px;
+    }
+}

@@ -1,0 +1,26 @@
+.side1{
+    position: fixed;
+    top: 0vh;
+    height: 100%;
+    width: 300px;
+    background-color: black;
+    z-index: 2;
+}
+.menuicon{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -240px;
+
+    scale: 2;
+    color:white;
+}
+.topbar1{
+    position: absolute;
+    top: -14px;
+    left: -10px;
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    z-index: 2;
+    border-bottom: 1px solid white;
+}

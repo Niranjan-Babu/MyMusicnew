@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+}
+.musiccontainer2{
+    top: 10vh;
+    background-color: black;
+    position: absolute;
+    width: 70vw;
+    right:20px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+.cardstyle{
+    width: 300px;
+    height: 280px;
+    border: 1px solid white;
+}
+.cardstyle:hover{
+    background-color: white;
+}
+.singerimg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    height: 60%;
+    width: 100%;
+    padding: 2vh;
+    
+}
+
+#sn1{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    
+    top: 160px;
+    font-size: 20px;
+    color: white;
+}
+.btn1{
+    position: absolute;
+    top: 80px;
+}
+.btn2{
+    position: absolute;
+    top: 50px;
+}
+@media only screen and (max-width:420px){
+    .musiccontainer2{
+       width: 90%;
+    }
+    .cardstyle{
+        width: 280px;
+    }
+}
