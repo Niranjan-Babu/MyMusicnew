@@ -4,10 +4,11 @@ import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import Divider from '@mui/material/Divider';
 import Drawer1  from '../drawer/Drawer1';
+import log from "./logo.png"
 const Sidebar = () => {
   return (
     <div className="side">
-      <div className='heading'>MyMusic</div>
+      <div className='heading'><img src={log} className='logimg'/></div>
       <div className='dra'><Drawer1/></div>
         <div className='topside'>
           

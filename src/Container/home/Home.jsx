@@ -18,19 +18,10 @@ import merke from "../assets/merke.jpg";
 import poneepo from "../assets/pooneepoo.jpg";
 import sne from "../assets/snehidane.jpg";
 import vtk from "../assets/vtk.jpg";
+import storage from '../../firebase';
 
 
-const firebaseConfig = {
-    apiKey: "AIzaSyDdfrqD1axCi722Dt66jySe4Vr_Yr6i8PI",
-    authDomain: "mymusic-df1c1.firebaseapp.com",
-    projectId: "mymusic-df1c1",
-    storageBucket: "mymusic-df1c1.appspot.com",
-    messagingSenderId: "389789019237",
-    appId: "1:389789019237:web:7c00b70d6f8b0f5904aa8c",
-    measurementId: "G-98VPCJJG9N"
-  };
-firebase.initializeApp(firebaseConfig);
-const storage = firebase.storage();
+
 
 
 const songs = [
@@ -128,12 +119,12 @@ const Home = () => {
      
       {songs.map((song) => (
         <div>
-        <Card key={song.id} className='cardstyle'sx={{background: 'linear-gradient( #000000, #252527)'}}onClick={() => setCurrentSong(song)}>
+        <Card key={song.id} className='cardstyle' onClick={() => setCurrentSong(song)}>
           <CardActionArea >
           <CardMedia
                 component="img"
                 height="160"
-                image={song.image}
+                image={song.image} 
                 alt={song.name}
               />
             
@@ -141,9 +132,9 @@ const Home = () => {
               
               <p id='sn1'>{song.name}</p>
               {currentSong && currentSong.id === song.id && (
-                <IconButton className="btn2" onClick={togglePlayPause}>
-                  {isPlaying ? <PauseIcon sx={{color:'white',}}/> : <PlayArrowIcon sx={{color:'white'}}/>}
-              </IconButton>
+                <button className="btn2" onClick={togglePlayPause}>
+                  {isPlaying ? <PauseIcon sx={{color:'white'}}/> : <PlayArrowIcon sx={{color:'white'}}/>}
+              </button>
                 
               )}
             </CardContent>

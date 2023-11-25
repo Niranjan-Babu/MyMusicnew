@@ -8,13 +8,15 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <div className='screen'></div>
+      <div className='topbar1'></div>
+       <Router>
         <Routes>
           <Route path='' element={<Home/>}/>
           <Route path="/search/yuvan" element={<New/>}/>
           <Route path="/search/anirudh" element={<Anirudh/>}/>
         </Routes>
-      </Router>
+      </Router> 
 
      
     </div>

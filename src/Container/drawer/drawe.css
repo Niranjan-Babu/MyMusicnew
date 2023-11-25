@@ -3,24 +3,21 @@
     top: 0vh;
     height: 100%;
     width: 300px;
-    background-color: black;
+    background-color: white;
     z-index: 2;
 }
 .menuicon{
-    position: absolute;
-    margin-top: 40px;
-    margin-left: -240px;
+   position: absolute;
+   color: white;
+   transform: translateY(-85px);
 
-    scale: 2;
-    color:white;
 }
 .topbar1{
-    position: absolute;
-    top: -14px;
-    left: -10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     height: 50px;
     width: 100vw;
     background-color: black;
     z-index: 2;
-    border-bottom: 1px solid white;
 }

@@ -6,7 +6,10 @@ import Divider from '@mui/material/Divider';
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import "./drawe.css"
+import '../sidebar/sidebar.css'
 import MenuIcon from '@mui/icons-material/Menu';
+import log from "./logo.png"
+
 
 export default function Drawer1() {
   const [state, setState] = React.useState({
@@ -36,7 +39,7 @@ export default function Drawer1() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <div className="side1">
-      <div className='heading'>MyMusic</div>
+      <div className='heading'><img src={log} className='logimg'/></div>
         <div className='topside'>
           <a></a>
           <a href='/'><p>Home</p></a>
@@ -57,11 +60,14 @@ export default function Drawer1() {
 
   return (
     <div>
+      
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <div className='topbar1'>
-          <Button onClick={toggleDrawer(anchor, true)}><div className='menuicon'><MenuIcon/></div></Button>
-          </div>
+          
+          <Button  onClick={toggleDrawer(anchor, true)}className='menuicon'>
+            <div ><MenuIcon sx={{color:'white'}}/></div>
+            </Button>
+          
           <Drawer
             anchor={anchor}
             open={state[anchor]}
